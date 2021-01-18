@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Life Cherester Counter</title>
+</head>
+
+<body>
+  <div class="container">
+    <h3>Live Cherester Counter</h3>
+    <textarea placeholder="Write your text here..." onkeyup="countLetters();"></textarea>
+    <p>Total live Cherester: <span class="count">0</span></p>
+  </div>
+
+  <a class="begin" href="../Begin.html">Back to Begin</a>
+
+  <script>
+    const textarea = document.querySelector('textarea');
+    const count = document.querySelector('.count');
+
+    function countLetters() {
+      const text = textarea.value;
+      const textLength = textarea.value.length;
+      count.innerText = `${textLength}`;
+
+    }
+  </script>
+</body>
+
+</html>
