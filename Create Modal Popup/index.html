@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Newsletter Popup Box | Vanilla JS</title>
+</head>
+
+<body>
+  <a href="#" class="btn" onclick="popupToggle();">Subscribe Us</a>
+  <div id="popup">
+    <div class="content">
+      <img src="e-mail.svg" alt="">
+      <h2>Join Our Newsletter</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste praesentium deserunt consectetur voluptatum modi
+        voluptatem.
+      </p>
+      <div class="inputBox">
+        <input type="e-mail" placeholder="Enter Email">
+      </div>
+      <div class="inputBox">
+        <input type="submit" value="Sing Up" class="btn">
+      </div>
+
+
+
+    </div>
+    <a href="" class="close" onclick="popupToggle();">
+      <img src="close.png" alt="">
+    </a>
+  </div>
+  <script>
+    function popupToggle() {
+      const popup = document.getElementById('popup');
+      popup.classList.toggle('active')
+    }
+  </script>
+</body>
+
+</html>
