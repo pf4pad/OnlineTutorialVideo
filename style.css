@@ -16,5 +16,8 @@ body {
   flex-wrap: wrap;
 }
 img{
-  max-height: 200px;
+  
+  width: 250px;
+  height: 200px;
+  object-fit: fill;
 }
